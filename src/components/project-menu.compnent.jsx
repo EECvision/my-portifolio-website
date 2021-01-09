@@ -63,7 +63,7 @@ const ProjectMenu =()=>{
                     <ProjectItem key={id} {...otherProps} />
                 ))
             }
-            <div className="inline bg-blue-600 hover:bg-blue-700 cursor-pointer rounded-lg text-white text-xl font-medium py-3 px-16 text-center mt-12">View all projects</div>
+            <div className="inline bg-blue-500 hover:bg-blue-700 cursor-pointer rounded-lg text-white text-xl font-medium py-3 px-8 md:px-16 text-center mt-12">View all projects</div>
         </div>    
     )
 }

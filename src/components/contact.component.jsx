@@ -3,7 +3,7 @@ import './contact.styles.css';
 
 function Contact() {
     return (
-        <div className="w-full flex justify-center p-16">
+        <div className="w-full flex justify-center py-16 px-4">
             <div className="w-full max-w-xs flex flex-col items-center justify-center p-6">
                 <div className="flex flex-col items-center justify-center mb-12">
                     <div className="text-gray-900 text-4xl font-bold">Hire Me</div>
