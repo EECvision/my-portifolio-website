@@ -9,10 +9,10 @@ function Contact() {
                     <div className="text-gray-700 text-4xl font-bold">Hire Me</div>
                     <div className="text-gray-800 text-sm">I am just one "Hello" away</div>
                 </div>
-                <div className="btn">
+                <a href="https://twitter.com/EECvision" target='_blank' rel='noreferrer' className="btn">
                     <div>SEND MESSAGE</div> 
                     <span><i class="fas fa-long-arrow-alt-right"></i></span>
-                </div>
+                </a>
             </div>
         </div>
     )

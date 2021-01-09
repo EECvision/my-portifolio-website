@@ -5,8 +5,15 @@ import iconEnvelope from '../assets/icon-envelope.svg';
 import iconPhone from '../assets/icon-phone.svg';
 
 const tools = ['html', 'css', 'tailwind css', 'saas', 'javascript', 'react', 'node', 'github', 'web responsiveness' ];
-const SocialMediaIcon =({children})=>(
-    <div className="inline outline-none focus:outline-none bg-blue-500 hover:bg-blue-600 cursor-pointer rounded-full text-white text-xl font-medium py-2 px-12 text-center mb-4">{children}</div>
+const SocialMediaIcon =({children,linkUrl})=>(
+    <a  href={linkUrl} 
+        target="_blank" 
+        rel="noreferrer" 
+        tabIndex="-1" 
+        className="inline focus:outline-none bg-blue-500 hover:bg-blue-600 cursor-pointer rounded-full text-white text-xl font-medium py-2 px-12 text-center mb-4"
+    >
+        {children}
+    </a>
 )
 
 function AboutPage() {
@@ -40,10 +47,10 @@ function AboutPage() {
                             <div className="flex items-center font-mono"><img className="p-2" src={iconEnvelope} alt="envelope"/>ezekaemmanuel1710@gmail.com</div>
                             <div className="flex items-center font-mono"><img className="p-2" src={iconPhone} alt="phone"/><pre>+234 80 6481 9800</pre></div>
                         </div>
-                        <div className="w-64 flex flex-wrap justify-evenly">
-                            <SocialMediaIcon><i class="fab fa-twitter"></i></SocialMediaIcon>
-                            <SocialMediaIcon><i class="fab fa-github"></i></SocialMediaIcon>
-                            <SocialMediaIcon><i class="fab fa-linkedin-in"></i></SocialMediaIcon>
+                        <div className="w-full max-w-xs flex flex-wrap justify-evenly">
+                            <SocialMediaIcon linkUrl={'https://twitter.com/EECvision'}><i class="fab fa-twitter"></i></SocialMediaIcon>
+                            <SocialMediaIcon linkUrl={'https://github.com/EECvision'}><i class="fab fa-github"></i></SocialMediaIcon>
+                            <SocialMediaIcon linkUrl={'https://www.linkedin.com/in/emmanuel-ezeka-027728163/'}><i class="fab fa-linkedin-in"></i></SocialMediaIcon>
                         </div>
                     </div>
                 </div>

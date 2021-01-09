@@ -45,7 +45,7 @@ const blogData = [
 function BlogsPage() {
     const [data] = useState(blogData)
     const [isCategory, setIsCategory] = useState('')
-    const categories=['tech', 'self development', 'all blogs']
+    const categories=['tech', 'self development', 'religion', 'all blogs']
 
     const handleClick=(e)=>{
         if(e === "all blogs"){
@@ -63,7 +63,7 @@ function BlogsPage() {
             <div className="w-full h-24 bg-gray-700 shadow-2xl flex justify-center items-center">
                 <div className="text-4xl text-white text-center font-bold">My Blogs</div>
             </div>
-            <div className="w-full h-24 bg-gray-200 shadow-2xl flex items-center justify-evenly">
+            <div className="w-full h-24 bg-gray-200 shadow-2xl flex flex-wrap items-center justify-around">
                 {
                     categories.map((category, idx)=>(
                         <div key={idx} onClick={()=>handleClick(category)} className="cursor-pointer text-lg text-blue-900 text-center border-2 border-gray-400 rounded-lg px-6 font-bold capitalize">{category}</div>
