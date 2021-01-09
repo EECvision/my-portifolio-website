@@ -11,7 +11,7 @@ const SocialMediaIcon =({children})=>(
 
 function AboutPage() {
     return (
-        <div id='about' className="w-full text-gray-900 mb-12">
+        <div id='about' className="w-full text-gray-900">
             <div className="w-full h-24 shadow-2xl flex justify-center items-center">
                 <div className="text-4xl opacity-75 text-center font-bold">About Me</div>
             </div>

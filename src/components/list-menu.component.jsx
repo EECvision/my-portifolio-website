@@ -1,12 +1,13 @@
 import { Link} from "react-scroll";
 
-function DropdownMenu({isActiveLink, setLinkActive}){
-    const setActiveLink = (e) => {
-        setLinkActive(e)
-    }  
+function ListMenu({isActiveLink, setLinkActive}){
 
+    const setActiveLink  =(e)=>{
+        setLinkActive(e)
+    }
+    
     const Navlink = ({linkName, linkId, linkUrl})=>(
-        <div className={`w-32 text-center cursor-pointer transition duration-500 ease-in-out hover:bg-gray-300 ${isActiveLink===linkId ? 'text-blue-500 border-b-2 border-white border-blue-500':''} px-4 py-2 font-bold`}>
+        <div className={`w-auto text-center cursor-pointer transition duration-500 ease-in-out hover:bg-gray-300 ${isActiveLink===linkId ? 'text-blue-500 border-b-2 border-white border-blue-500':''} px-4 py-2 font-bold`}>
             <Link 
                 to={linkUrl} 
                 activeClass="active"
@@ -22,8 +23,8 @@ function DropdownMenu({isActiveLink, setLinkActive}){
     )
 
     return(
-        <div className="w-full fixed mt-24 z-10 max-w-sm md:hidden bg-white rounded-lg shadow-2xl border-2 border-gray-300 py-8">
-            <nav className="flex flex-col items-center justify-evenly text-sm text-gray-700">
+        <div className="w-full max-w-lg hidden md:flex justify-center">
+            <nav className="w-full flex items-center justify-between text-sm text-gray-700">
                 <Navlink linkName="ABOUT" linkId={1} linkUrl="about"/>
                 <Navlink linkName="PROJECTS" linkId={2} linkUrl="projects"/>
                 <Navlink linkName="BLOGS" linkId={3} linkUrl="blogs"/>
@@ -34,4 +35,4 @@ function DropdownMenu({isActiveLink, setLinkActive}){
     )
 }
 
-export default DropdownMenu;
+export default ListMenu;
