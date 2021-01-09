@@ -1,0 +1,27 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(39, 146, 218);
+    padding: 12px 48px;
+    border-radius: 9999px;
+}
+.btn div{
+    color: white;
+    font-size: small;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    cursor: pointer;
+}
+.btn:hover span {
+    transform: translateX(16px);
+}
+.btn:hover {
+    background: rgb(31, 116, 173);
+}
+span {
+    transition: all 0.8s ease;
+    margin-left: 10px;
+    color: white;
+}
