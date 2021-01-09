@@ -6,7 +6,7 @@ import iconPhone from '../assets/icon-phone.svg';
 
 const tools = ['html', 'css', 'tailwind css', 'saas', 'javascript', 'react', 'node', 'github', 'web responsiveness' ];
 const SocialMediaIcon =({children})=>(
-    <div className="inline bg-blue-500 hover:bg-blue-600 cursor-pointer rounded-full text-white text-xl font-medium py-2 px-12 text-center mb-4">{children}</div>
+    <div className="inline outline-none focus:outline-none bg-blue-500 hover:bg-blue-600 cursor-pointer rounded-full text-white text-xl font-medium py-2 px-12 text-center mb-4">{children}</div>
 )
 
 function AboutPage() {
