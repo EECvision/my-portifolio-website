@@ -24,7 +24,7 @@ function AboutPage() {
             </div>
             <div className="w-full flex flex-col md:flex-row items-center justify-between p-4 md:px-24">
                 <div className="w-full max-w-md flex flex-col items-center justify-center mb-12 md:mb-0">
-                    <img src={imageEec} alt="eec" style={{filter: "drop-shadow(2px 4px 8px #585858)"}} className="w-full max-w-xs rounded-lg"/>
+                    <img src={imageEec} alt="eec" style={{filte: "drop-shadow(2px 4px 8px #585858)"}} className="w-full max-w-sm rounded-lg"/>
                     <div className="text-2xl text-gray-700 font-medium my-2 font-serif">Emmanuel Ezeka</div>
                     <div className="text-gray-600 font-medium text-center font-sans">
                         I am a Front-End Developer. I'm very passionate about solving problems and bringing up solutions to the challenges facing people in the modern world.
