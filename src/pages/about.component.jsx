@@ -20,7 +20,7 @@ function AboutPage() {
     return (
         <div id='about' className="w-full text-gray-900">
             <div className="w-full h-24 shadow-2xl flex justify-center items-center">
-                <div className="text-4xl opacity-75 text-center font-bold">About Me</div>
+                <div className="text-4xl opacity-75 text-center font-bold">About Myself</div>
             </div>
             <div className="w-full flex flex-col md:flex-row items-center justify-between p-4 md:px-24">
                 <div className="w-full max-w-md flex flex-col items-center justify-center mb-12 md:mb-0">

@@ -45,10 +45,10 @@ const projectData = [
     },
     {
         id: 6,
-        projectName: 'url shortening api',
-        description: 'A responsive landing page',
-        icon: 'previewUrl',
-        linkUrl: 'https://eecvision.github.io/url-shortening-api',
+        projectName: 'Todo app',
+        description: 'A todo app with dark mode and drag-drop feature',
+        icon: 'previewTodo',
+        linkUrl: 'https://task-flow.netlify.app/',
         invert: true
     },
 

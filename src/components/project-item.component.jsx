@@ -4,7 +4,7 @@ import previewJobListing from '../assets/preview-job-listing.jpg';
 import previewManage from '../assets/preview-manage.jpg';
 import previewRoom from '../assets/preview-room.jpg';
 import previewSocialMedia from '../assets/preview-social.jpg';
-import previewUrl from '../assets/preview-url.jpg';
+import previewTodo from '../assets/preview-todo.jpg';
 
 const previews ={
     previewEasyBank: previewEasyBank,
@@ -12,7 +12,7 @@ const previews ={
     previewManage: previewManage,
     previewRoom: previewRoom,
     previewSocialMedia: previewSocialMedia,
-    previewUrl: previewUrl
+    previewTodo: previewTodo
 }
 
 const ProjectItem =({icon, projectName, description, linkUrl, invert})=>(
