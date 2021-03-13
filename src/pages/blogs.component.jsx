@@ -31,7 +31,7 @@ function BlogsPage() {
                 }
             </div>
 
-            <div className="w-full px-4 md:px-24">
+            <div className="w-full flex items-center justify-center px-4">
                 <BlogMenu data={filteredData}/>
             </div>
         </div>

@@ -22,13 +22,12 @@ function DropdownMenu({isActiveLink, setLinkActive}){
     )
 
     return(
-        <div className="w-full fixed mt-24 z-10 max-w-sm md:hidden bg-white rounded-lg shadow-2xl border-2 border-gray-300 py-8">
+        <div className="w-full h-full max-w-sm md:hidden bg-white">
             <nav className="flex flex-col items-center justify-evenly text-sm text-gray-700">
                 <Navlink linkName="ABOUT" linkId={1} linkUrl="about"/>
                 <Navlink linkName="PROJECTS" linkId={2} linkUrl="projects"/>
                 <Navlink linkName="BLOGS" linkId={3} linkUrl="blogs"/>
-                <Navlink linkName="QUOTES" linkId={4} linkUrl="quotes"/>
-                <Navlink linkName="CONTACT" linkId={5} linkUrl="contact"/>
+                <Navlink linkName="CONTACT" linkId={4} linkUrl="contact"/>
             </nav>
         </div>
     )

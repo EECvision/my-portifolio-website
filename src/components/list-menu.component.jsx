@@ -28,8 +28,7 @@ function ListMenu({isActiveLink, setLinkActive}){
                 <Navlink linkName="ABOUT" linkId={1} linkUrl="about"/>
                 <Navlink linkName="PROJECTS" linkId={2} linkUrl="projects"/>
                 <Navlink linkName="BLOGS" linkId={3} linkUrl="blogs"/>
-                <Navlink linkName="QUOTES" linkId={4} linkUrl="quotes"/>
-                <Navlink linkName="CONTACT" linkId={5} linkUrl="contact"/>
+                <Navlink linkName="CONTACT" linkId={4} linkUrl="contact"/>
             </nav>
         </div>
     )

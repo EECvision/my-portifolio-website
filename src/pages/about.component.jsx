@@ -1,10 +1,9 @@
 import React from 'react';
-
 import imageEec from '../assets/image-eec.png';
 import iconEnvelope from '../assets/icon-envelope.svg';
 import iconPhone from '../assets/icon-phone.svg';
 
-const tools = ['html', 'css', 'tailwind css', 'saas', 'javascript', 'react', 'node', 'github', 'web responsiveness' ];
+const tools = ['html', 'css', 'tailwind css', 'saas', 'javascript', 'react', 'node', 'express', 'mongodb', 'github', 'web responsiveness' ];
 const SocialMediaIcon =({children,linkUrl})=>(
     <a  href={linkUrl} 
         target="_blank" 
@@ -19,7 +18,7 @@ const SocialMediaIcon =({children,linkUrl})=>(
 function AboutPage() {
     return (
         <div id='about' className="w-full text-gray-900">
-            <div className="w-full h-24 shadow-2xl flex justify-center items-center">
+            <div className="w-full h-24 shadow-lg flex justify-center items-center">
                 <div className="text-4xl opacity-75 text-center font-bold">About Myself</div>
             </div>
             <div className="w-full flex flex-col md:flex-row items-center justify-between p-4 md:px-24">
@@ -27,7 +26,7 @@ function AboutPage() {
                     <img src={imageEec} alt="eec" style={{filte: "drop-shadow(2px 4px 8px #585858)"}} className="w-full max-w-sm rounded-lg"/>
                     <div className="text-2xl text-gray-700 font-medium my-2 font-serif">Emmanuel Ezeka</div>
                     <div className="text-gray-600 font-medium text-center font-sans">
-                        I am a Front-End Developer. I'm very passionate about solving problems and bringing up solutions to the challenges facing people in the modern world.
+                        I am a Web Developer. I'm very passionate about solving problems and bringing up solutions to the challenges facing people in the modern world.
                     </div>
                 </div>
                 <div className="w-full max-w-xl flex flex-col">
@@ -48,9 +47,9 @@ function AboutPage() {
                             <div className="flex items-center font-mono"><img className="p-2" src={iconPhone} alt="phone"/><pre>+234 80 6481 9800</pre></div>
                         </div>
                         <div className="w-full max-w-xs flex flex-wrap justify-evenly">
-                            <SocialMediaIcon linkUrl={'https://twitter.com/EECvision'}><i class="fab fa-twitter"></i></SocialMediaIcon>
-                            <SocialMediaIcon linkUrl={'https://github.com/EECvision'}><i class="fab fa-github"></i></SocialMediaIcon>
-                            <SocialMediaIcon linkUrl={'https://www.linkedin.com/in/emmanuel-ezeka-027728163/'}><i class="fab fa-linkedin-in"></i></SocialMediaIcon>
+                            <SocialMediaIcon linkUrl={'https://twitter.com/EECvision'}><i className="fab fa-twitter"></i></SocialMediaIcon>
+                            <SocialMediaIcon linkUrl={'https://github.com/EECvision'}><i className="fab fa-github"></i></SocialMediaIcon>
+                            <SocialMediaIcon linkUrl={'https://www.linkedin.com/in/emmanuel-ezeka-027728163/'}><i className="fab fa-linkedin-in"></i></SocialMediaIcon>
                         </div>
                     </div>
                 </div>

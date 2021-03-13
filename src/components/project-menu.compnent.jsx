@@ -1,71 +1,38 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import ProjectItem from './project-item.component';
+import PROJECT_DATA from '../pages/project-data';
 
-const projectData = [
-    {
-        id: 1,
-        projectName: 'manage landing page',
-        description: 'A responsive landing page',
-        icon: 'previewManage',
-        linkUrl: 'https://eecvision.github.io/manage-landing-page',
-        invert: false
-    },
-    {
-        id: 2,
-        projectName: 'room homepage',
-        description: 'A responsive landing page',
-        icon: 'previewRoom',
-        linkUrl: 'https://eecvision.github.io/room-homepage',
-        invert: true
 
-    },
-    {
-        id: 3,
-        projectName: 'easy bank landing page',
-        description: 'A responsive landing page',
-        icon: 'previewEasyBank',
-        linkUrl: 'https://eecvision.github.io/easy-banking-landing-page',
-        invert: false
-    },
-    {
-        id: 4,
-        projectName: 'social media dashboard',
-        description: 'A responsive landing page',
-        icon: 'previewSocialMedia',
-        linkUrl: 'https://eecvision.github.io/social-media-dashboards',
-        invert: true
-    },
-    {
-        id: 5,
-        projectName: 'Job listing website',
-        description: 'A responsive landing page',
-        icon: 'previewJobListing',
-        linkUrl: 'https://eecvision.github.io/job-listing',
-        invert: false
-    },
-    {
-        id: 6,
-        projectName: 'Todo app',
-        description: 'A todo app with dark mode and drag-drop feature',
-        icon: 'previewTodo',
-        linkUrl: 'https://task-flow.netlify.app/',
-        invert: true
-    },
+const ProjectMenu = () => {
+  const [data] = useState(PROJECT_DATA);
+  const [showAll, toggleAll] = useState(false)
 
-]
-
-const ProjectMenu =()=>{
-    const [data] = useState(projectData)
-    return(
-        <div className="w-full bg-white rounded-xl shadow-lg border-2 border-gray-300 flex flex-col items-center justify-between mb-12 p-4 md:px-24 md:py-20 transform">
-            {
-                data.map(({id,...otherProps})=>(
-                    <ProjectItem key={id} {...otherProps} />
-                ))
-            }
-            <div className="inline bg-blue-500 hover:bg-blue-700 cursor-pointer rounded-lg text-white text-xl font-medium py-3 px-8 md:px-16 text-center mt-12">View all projects</div>
-        </div>    
-    )
+  return (
+    <div className="w-full max-w-6xl bg-white rounded-xl shadow-lg border-2 border-gray-300 flex flex-col items-center justify-between mb-12 p-4 md:py-12 transform">
+      {
+        showAll ?
+          data
+            .map(({ id, ...otherProps }) => (
+              <ProjectItem key={id} {...otherProps} />
+            ))
+          :
+          data
+            .filter(({ id }) => id <= 5)
+            .map(({ id, ...otherProps }) => (
+              <ProjectItem key={id} {...otherProps} />
+            ))
+      }
+      <div 
+        onClick={() => toggleAll(!showAll)} 
+        className="inline bg-blue-500 hover:bg-blue-700 cursor-pointer rounded-lg text-white text-xl font-medium py-3 px-8 md:px-16 text-center mt-12">
+         {
+           showAll 
+           ? "View less projects"
+           : "View more projects"
+         }
+        </div>
+    </div>
+  )
 }
 
 

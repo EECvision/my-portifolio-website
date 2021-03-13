@@ -7,7 +7,7 @@ function ProjectsPage() {
             <div className="absolute w-full h-48 bg-gray-700 flex items-start justify-center">
                 <div className="text-gray-100 text-4xl text-center font-bold mt-4">My Projects</div>
             </div>
-            <div className="w-full px-4 md:px-24 mt-24">
+            <div className="w-full flex items-center justify-center px-4 mt-24">
                 <ProjectMenu/>
             </div>
         </div>
