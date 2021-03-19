@@ -1,45 +1,19 @@
 const PROJECT_DATA = [
   {
     id: 1,
-    projectName: 'Keep_Up',
-    description: 'A todo app, the first app I developed with react',
-    lesson: 'confidence and happiness, css positioning, good html structure, working with time and date in javascript',
-    tools: 'react | css | javascript | git',
-    credit: 'myself',
-    quote: 'New to a programming language, write Hello World!; New to a tech stack, build Todo App',
-    githubLink: 'https://github.com/EECvision/keep_up',
-    icon: 'previewKeepUp',
-    linkUrl: ' https://eecvision.github.io/keep_up/',
+    projectName: 'splendor-luxeel',
+    description: 'An e-commerce website aimed to build on top of the existing social media platforms',
+    lesson: 'advanced state management with react-redux, react routing, server-side rendering, improved user experience, javascript, database, version control, web optimizations ',
+    tools: 'react | redux | tailwind css | javascript | firebase | node | git | express',
+    credit: 'UI inspired by Jumia',
+    quote: "Learning is a collection of pieces information and applying it in bulk",
+    githubLink: 'https://github.com/EECvision/splendor-luxeel',
+    icon: 'previewShop',
+    linkUrl: 'https://splendor-luxeel.vercel.app',
     invert: false
   },
   {
     id: 2,
-    projectName: 'room homepage',
-    description: 'A representation of a responsive web page',
-    lesson: 'css positioning, good html structure, web responsivenes',
-    tools: 'react | tailwind css | html | git',
-    credit: 'frontendmentor.io',
-    quote: 'If we can do one, we can do yet another one',
-    githubLink: 'https://github.com/EECvision/room-homepage',
-    icon: 'previewRoom',
-    linkUrl: 'https://eecvision.github.io/room-homepage',
-    invert: true
-  },
-  {
-    id: 3,
-    projectName: 'easy bank landing page',
-    description: 'A representation of a responsive web page',
-    lesson: 'advanced css positioning, good html structure, web responsivenes',
-    tools: 'react | tailwind css | html | git',
-    credit: 'frontendmentor.io',
-    quote: 'Recursion in learning is like - Today, can I do this? Tomorrow, ooh I did it.',
-    githubLink: 'https://github.com/EECvision/easy-banking-landing-page',
-    icon: 'previewEasyBank',
-    linkUrl: 'https://eecvision.github.io/easy-banking-landing-page',
-    invert: false
-  },
-  {
-    id: 4,
     projectName: 'Noteon',
     description: 'A note app for recording our life activities',
     lesson: 'advanced state management with react-redux, react routing, improved use experience, more javascript, authentication and storage',
@@ -52,7 +26,7 @@ const PROJECT_DATA = [
     invert: true
   },
   {
-    id: 5,
+    id: 3,
     projectName: 'nuf9ja',
     description: 'A music website for publishing, downling and sharing of songs',
     lesson: 'advanced state management with react-redux, react routing, server-side rendering, improved user experience, more javascript, database, version control ',
@@ -61,6 +35,32 @@ const PROJECT_DATA = [
     quote: "let's work together and create more at a less time",
     icon: 'previewNuf',
     linkUrl: 'https://nuf9ja.herokuapp.com',
+    invert: false
+  },
+  {
+    id: 4,
+    projectName: 'room homepage',
+    description: 'A representation of a responsive web page',
+    lesson: 'css positioning, good html structure, web responsivenes',
+    tools: 'react | tailwind css | html | git',
+    credit: 'frontendmentor.io',
+    quote: 'If we can do one, we can do yet another one',
+    githubLink: 'https://github.com/EECvision/room-homepage',
+    icon: 'previewRoom',
+    linkUrl: 'https://eecvision.github.io/room-homepage',
+    invert: true
+  },
+  {
+    id: 5,
+    projectName: 'easy bank landing page',
+    description: 'A representation of a responsive web page',
+    lesson: 'advanced css positioning, good html structure, web responsivenes',
+    tools: 'react | tailwind css | html | git',
+    credit: 'frontendmentor.io',
+    quote: 'Recursion in learning is like - Today, can I do this? Tomorrow, ooh I did it.',
+    githubLink: 'https://github.com/EECvision/easy-banking-landing-page',
+    icon: 'previewEasyBank',
+    linkUrl: 'https://eecvision.github.io/easy-banking-landing-page',
     invert: false
   },
   {
@@ -101,7 +101,20 @@ const PROJECT_DATA = [
     icon: 'previewTodo',
     linkUrl: 'https://task-flow.netlify.app/',
     invert: true
-  }
+  },
+  {
+    id: 9,
+    projectName: 'Keep_Up',
+    description: 'A todo app, the first app I developed with react',
+    lesson: 'confidence and happiness, css positioning, good html structure, working with time and date in javascript',
+    tools: 'react | css | javascript | git',
+    credit: 'myself',
+    quote: 'New to a programming language, write Hello World!; New to a tech stack, build Todo App',
+    githubLink: 'https://github.com/EECvision/keep_up',
+    icon: 'previewKeepUp',
+    linkUrl: ' https://eecvision.github.io/keep_up/',
+    invert: false
+  },
 ]
 
 export default PROJECT_DATA

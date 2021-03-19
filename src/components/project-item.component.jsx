@@ -8,6 +8,7 @@ import previewTodo from '../assets/preview-todo.jpg';
 import previewKeepUp from '../assets/preview-KeepUp.JPG'
 import previewNote from '../assets/preview-note.JPG';
 import previewNuf from '../assets/preview-nuf.JPG';
+import previewShop from '../assets/preview-shop.JPG';
 
 const previews = {
   previewEasyBank: previewEasyBank,
@@ -18,7 +19,8 @@ const previews = {
   previewTodo: previewTodo,
   previewKeepUp: previewKeepUp,
   previewNote: previewNote,
-  previewNuf: previewNuf
+  previewNuf: previewNuf,
+  previewShop: previewShop
 }
 
 const ProjectItem = ({ icon, projectName, description, linkUrl, invert, tools, lesson, credit, quote, githubLink }) => (
