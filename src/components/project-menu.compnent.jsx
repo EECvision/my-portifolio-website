@@ -17,7 +17,7 @@ const ProjectMenu = () => {
             ))
           :
           data
-            .filter(({ id }) => id <= 5)
+            .filter(({ id }) => id <= 4)
             .map(({ id, ...otherProps }) => (
               <ProjectItem key={id} {...otherProps} />
             ))
